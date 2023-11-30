@@ -4,6 +4,42 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/* Navbar */
+header {
+  height: 80px;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+
+nav [class|="nav"] {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+/* Jumbo */
+
+.hero {
+  padding: 15%;
+}
+
+.jumbo {
+  display: flex;
+}
+
 /* SEZIONE QUADRATI */
 .brandsquares {
   display: flex;
@@ -20,7 +56,6 @@
 .smallsquare {
   width: 50%;
   height: 50%;
-  border: 1px dotted green;
   display: flex;
   justify-content: center;
   align-items: center;
