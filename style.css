@@ -12,6 +12,10 @@ a:visited {
   color: inherit;
 }
 
+:root {
+  --pagegutter: 20%;
+}
+
 /* Navbar */
 header {
   height: 80px;
@@ -22,22 +26,108 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 5px 20px;
+  height: 80px;
 }
 
 nav [class|="nav"] {
-  height: 80px;
+  line-height: 80px;
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
+[class|="nav"] a {
+  color: black;
+}
+
+/* Blue button */
+.bluebutton {
+  box-sizing: content-box;
+  background-color: #0061ff;
+  padding: 5px 10px;
+  border-style: none;
+  color: white;
+}
+
+.bluebutton a {
+  color: white;
+}
+
+.bluebutton:hover {
+  opacity: 70%;
+}
 /* Jumbo */
 
 .hero {
   padding: 15%;
+  background-color: #b4d0e7;
 }
 
 .jumbo {
   display: flex;
+}
+
+.jtext-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.jtext-wrapper * {
+  display: block;
+}
+
+.jumbo img {
+  max-width: 60%;
+  position: relative;
+}
+
+/* OPCARDS */
+
+.op-wrapper {
+  padding: 30px var(--pagegutter);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.opcard {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3 - 20px);
+}
+
+/* Plan Cards */
+.card-wrapper {
+  padding: 30 var(--pagegutter);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  width: calc(100% / 3 - 15px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+}
+
+.hcard {
+  display: flex;
+}
+
+/* Partner */
+
+.partnerwrap {
+  padding: 30 var(--pagegutter);
+  display: flex;
+}
+
+.parnerwrap img {
+  display: block;
 }
 
 /* SEZIONE QUADRATI */

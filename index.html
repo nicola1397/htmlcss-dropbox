@@ -10,18 +10,18 @@
   <body>
     <header>
       <nav>
-        <div class="navleft">
+        <div class="nav-left">
           <img src="./img/logo-small.png" alt="Logo" />
           <a href="#">lorem</a>
           <a href="#">lorem</a>
           <a href="#">lorem</a>
         </div>
 
-        <div class="navright">
+        <div class="nav-right">
           <a href="#">lorem</a>
           <a href="#">lorem</a>
           <a href="#">lorem</a>
-          <button>
+          <button class="bluebutton">
             <a href="#">Inizia</a>
           </button>
         </div>
@@ -29,20 +29,22 @@
     </header>
 
     <section class="hero">
+      <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
       <div class="jumbo">
-        <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
-        <p>
-          Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono
-          accessibili dallo stesso posto. Dropbox Business è più di uno spazio
-          di archiviazione sicuro: è un modo intelligente e integrato per
-          ottimizzare il flusso di lavoro esistente.
-        </p>
+        <div class="jtext-wrapper">
+          <p>
+            Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono
+            accessibili dallo stesso posto. Dropbox Business è più di uno spazio
+            di archiviazione sicuro: è un modo intelligente e integrato per
+            ottimizzare il flusso di lavoro esistente.
+          </p>
 
-        <button>
-          <a href="#">Inizia la tua prova gratuita</a>
-        </button>
+          <button class="bluebutton">
+            <a href="#">Inizia la tua prova gratuita</a>
+          </button>
 
-        <span>Annulla in qualsiasi momento </span>
+          <span>Annulla in qualsiasi momento </span>
+        </div>
 
         <img src="./img/jumbo.png" alt="Jumbo" />
       </div>
@@ -51,40 +53,202 @@
     <main>
       <section class="wrapper">
         <h2>Trova il piano business che fa per te</h2>
-        <input type="radio" name="Fatturazione mensile" />
-        <input type="radio" name="Fatturazione annuale" />
+        <form>
+          <input type="radio" name="Fatturazione mensile" />
+          <input type="radio" name="Fatturazione annuale" />
+        </form>
 
         <div class="card-wrapper">
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
+          <div class="card">
+            <span>Titolo</span>
+            <h3>Categoria</h3>
+            <h4>Prezzo</h4>
+            <span>durata</span>
+
+            <ul class="iconlist">
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+            </ul>
+            <button class="bluebutton">Prova gratis per 30 giorni</button>
+
+            <span>oppure <a href="#">acquista ora</a></span>
+            <hr />
+            <h4>Punti salenti del piano</h4>
+            <ul class="checklist">
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span>Titolo</span>
+            <h3>Categoria</h3>
+            <h4>Prezzo</h4>
+            <span>durata</span>
+
+            <ul class="iconlist">
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+            </ul>
+            <button class="bluebutton">Prova gratis per 30 giorni</button>
+
+            <span>oppure <a href="#">acquista ora</a></span>
+            <hr />
+            <h4>Punti salenti del piano</h4>
+            <ul class="checklist">
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span>Titolo</span>
+            <h3>Categoria</h3>
+            <h4>Prezzo</h4>
+            <span>durata</span>
+
+            <ul class="iconlist">
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+            </ul>
+            <button class="bluebutton">Prova gratis per 30 giorni</button>
+
+            <span>oppure <a href="#">acquista ora</a></span>
+            <hr />
+            <h4>Punti salenti del piano</h4>
+            <ul class="checklist">
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+            </ul>
+          </div>
         </div>
 
-        <div class="hcard"></div>
+        <div class="hcard">
+          <div>
+            <span>Titolo</span>
+            <h3>Categoria</h3>
+            <h4>Prezzo</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi,
+              dolores a! Ut facilis debitis nulla vel fugit error enim, fuga at
+              corrupti dicta aliquam impedit quidem provident corporis
+              asperiores! Maxime!
+            </p>
+          </div>
+          <div>
+            <button class="bluebutton">Contatta l'ufficio vendite</button>
+          </div>
+        </div>
 
         <div class="partnerwrap">
           <img src="./img/partner.png" alt="Partner" />
-          <h3>Entra in contatto con un partner Dropbox</h3>
-          <p>
-            Trova un partner Dropbox e HelloSign di fiducia. Ottieni le
-            soluzioni e i servizi necessari per raggiungere i tuoi obbiettivi
-            aziendali, tra cui l'implementazione, integrazione, gestione e
-            supporto continui.
-          </p>
-          <button>
-            <a href="#">Trova un partner</a>
-          </button>
+          <div>
+            <h3>Entra in contatto con un partner Dropbox</h3>
+            <p>
+              Trova un partner Dropbox e HelloSign di fiducia. Ottieni le
+              soluzioni e i servizi necessari per raggiungere i tuoi obbiettivi
+              aziendali, tra cui l'implementazione, integrazione, gestione e
+              supporto continui.
+            </p>
+            <button class="whitebutton">
+              <a href="#">Trova un partner</a>
+            </button>
+          </div>
         </div>
 
+        <!-- Operazioni - cards -->
         <h2>Esegui più operazioni con Dropbox Business</h2>
 
         <div class="op-wrapper">
-          <div class="opcard"></div>
-          <div class="opcard"></div>
-          <div class="opcard"></div>
-          <div class="opcard"></div>
-          <div class="opcard"></div>
-          <div class="opcard"></div>
+          <div class="opcard">
+            <img
+              src="./img/business-feature-switching-tools.png"
+              alt="strumenti"
+            />
+            <h3>Lorem Ipsum</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Necessitatibus esse nesciunt repellendus magnam suscipit
+              recusandae? Voluptatibus deserunt cum rerum. Voluptatem recusandae
+              cumque laboriosam dolores corrupti necessitatibus impedit officia
+              hic accusantium.
+            </p>
+          </div>
+          <div class="opcard">
+            <img
+              src="./img/business-feature-switching-tools.png"
+              alt="strumenti"
+            />
+            <h3>Lorem Ipsum</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Necessitatibus esse nesciunt repellendus magnam suscipit
+              recusandae? Voluptatibus deserunt cum rerum. Voluptatem recusandae
+              cumque laboriosam dolores corrupti necessitatibus impedit officia
+              hic accusantium.
+            </p>
+          </div>
+          <div class="opcard">
+            <img
+              src="./img/business-feature-switching-tools.png"
+              alt="strumenti"
+            />
+            <h3>Lorem Ipsum</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Necessitatibus esse nesciunt repellendus magnam suscipit
+              recusandae? Voluptatibus deserunt cum rerum. Voluptatem recusandae
+              cumque laboriosam dolores corrupti necessitatibus impedit officia
+              hic accusantium.
+            </p>
+          </div>
+          <div class="opcard">
+            <img
+              src="./img/business-feature-switching-tools.png"
+              alt="strumenti"
+            />
+            <h3>Lorem Ipsum</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Necessitatibus esse nesciunt repellendus magnam suscipit
+              recusandae? Voluptatibus deserunt cum rerum. Voluptatem recusandae
+              cumque laboriosam dolores corrupti necessitatibus impedit officia
+              hic accusantium.
+            </p>
+          </div>
+          <div class="opcard">
+            <img
+              src="./img/business-feature-switching-tools.png"
+              alt="strumenti"
+            />
+            <h3>Lorem Ipsum</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Necessitatibus esse nesciunt repellendus magnam suscipit
+              recusandae? Voluptatibus deserunt cum rerum. Voluptatem recusandae
+              cumque laboriosam dolores corrupti necessitatibus impedit officia
+              hic accusantium.
+            </p>
+          </div>
+          <div class="opcard">
+            <img
+              src="./img/business-feature-switching-tools.png"
+              alt="strumenti"
+            />
+            <h3>Lorem Ipsum</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Necessitatibus esse nesciunt repellendus magnam suscipit
+              recusandae? Voluptatibus deserunt cum rerum. Voluptatem recusandae
+              cumque laboriosam dolores corrupti necessitatibus impedit officia
+              hic accusantium.
+            </p>
+          </div>
         </div>
 
         <h2>Più di 500.000 team utilizzano Dropbox Business</h2>
