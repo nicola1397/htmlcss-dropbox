@@ -16,6 +16,10 @@ a:visited {
   --pagegutter: 20%;
 }
 
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
 /* Navbar */
 header {
   height: 80px;
@@ -40,11 +44,16 @@ nav [class|="nav"] {
   color: black;
 }
 
+nav div > a:hover {
+  box-shadow: 0 -5px black inset;
+}
+
 /* Blue button */
 .bluebutton {
+  font-size: 1rem;
   box-sizing: content-box;
   background-color: #0061ff;
-  padding: 5px 10px;
+  padding: 8px 15px;
   border-style: none;
   color: white;
 }
@@ -58,8 +67,13 @@ nav [class|="nav"] {
 }
 /* Jumbo */
 
+.hero h1 {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
 .hero {
-  padding: 15%;
+  padding: 50px 20%;
   background-color: #b4d0e7;
 }
 
@@ -69,6 +83,7 @@ nav [class|="nav"] {
 
 .jtext-wrapper {
   display: flex;
+  margin-top: 50px;
   flex-direction: column;
   gap: 20px;
 }
@@ -78,8 +93,13 @@ nav [class|="nav"] {
 }
 
 .jumbo img {
-  max-width: 60%;
+  max-width: 70%;
   position: relative;
+  top: 50px;
+}
+
+.jtext-wrapper .bluebutton {
+  width: fit-content;
 }
 
 /* OPCARDS */
