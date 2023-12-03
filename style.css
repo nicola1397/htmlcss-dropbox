@@ -13,7 +13,8 @@ a:visited {
 }
 
 :root {
-  --pagegutter: 20%;
+  --widegutter: 20%;
+  --pagegutter: 25%;
 }
 
 body {
@@ -48,6 +49,11 @@ nav div > a:hover {
   box-shadow: 0 -5px black inset;
 }
 
+.jtext-wrapper i {
+  font-size: 3rem;
+  margin-top: 100px;
+  align-self: baseline;
+}
 /* Blue button */
 .bluebutton {
   font-size: 1rem;
@@ -73,8 +79,9 @@ nav div > a:hover {
 }
 
 .hero {
-  padding: 50px 20%;
+  padding: 50px var(--widegutter) 0 var(--widegutter);
   background-color: #b4d0e7;
+  margin-bottom: 130px;
 }
 
 .jumbo {
@@ -102,24 +109,43 @@ nav div > a:hover {
   width: fit-content;
 }
 
-/* OPCARDS */
-
-.op-wrapper {
-  padding: 30px var(--pagegutter);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.opcard {
-  display: flex;
-  flex-direction: column;
-  width: calc(100% / 3 - 20px);
-}
-
 /* Plan Cards */
+
+.wrapper {
+  padding: 0 var(--pagegutter);
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.radiocheck {
+  background-color: white;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid lightslategray;
+  border-radius: 50%;
+}
+
+.radiocheck:hover {
+  box-shadow: 0 0 0 5px #0061ff inset;
+  border-style: none;
+}
+
+form {
+  margin: 50px 0 50px 0;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+form div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .card-wrapper {
   padding: 30 var(--pagegutter);
   display: flex;
@@ -148,6 +174,23 @@ nav div > a:hover {
 
 .parnerwrap img {
   display: block;
+}
+
+/* OPCARDS */
+
+.op-wrapper {
+  padding: 30px var(--pagegutter);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.opcard {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3 - 20px);
 }
 
 /* SEZIONE QUADRATI */
