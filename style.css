@@ -15,6 +15,8 @@ a:visited {
 :root {
   --widegutter: 20%;
   --pagegutter: 25%;
+  --fa-li-margin: 26px;
+  --fa-li-width: 30px;
 }
 
 body {
@@ -109,7 +111,7 @@ nav div > a:hover {
   width: fit-content;
 }
 
-/* Plan Cards */
+/* SEZIONE PIANI TARIFFARI */
 
 .wrapper {
   padding: 0 var(--pagegutter);
@@ -118,7 +120,7 @@ nav div > a:hover {
 h2 {
   font-size: 3rem;
 }
-
+/* SELETTORE RADIO */
 .radiocheck {
   background-color: white;
   display: inline-block;
@@ -146,6 +148,10 @@ form div {
   gap: 10px;
 }
 
+/* FINE SELETTORE RADIO */
+
+/* CARDS */
+
 .card-wrapper {
   padding: 30 var(--pagegutter);
   display: flex;
@@ -159,6 +165,10 @@ form div {
   flex-direction: column;
   flex-wrap: nowrap;
   height: 100%;
+}
+
+.checklist i {
+  color: #0061ff;
 }
 
 .hcard {
