@@ -315,6 +315,11 @@ h3 {
 }
 
 /* SEZIONE QUADRATI */
+
+.partnerlink {
+  text-decoration: underline;
+}
+
 .brandsquares {
   margin-top: 100px;
   display: flex;
@@ -416,6 +421,11 @@ h3 {
 .purpletitle {
   color: #60092b;
   width: 60%;
+}
+
+.try .whitebutton {
+  border: none;
+  margin: 0;
 }
 
 /* FAQ */
