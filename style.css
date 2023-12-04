@@ -400,3 +400,19 @@ h3 {
   filter: invert(100%);
   width: 50%;
 }
+
+/* SEZIONE PROVA */
+
+.try {
+  background-color: #b4d0e7;
+  padding: 0 25%;
+  height: 35vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.purpletitle {
+  color: #60092b;
+  width: 60%;
+}
