@@ -231,10 +231,30 @@ h3 {
   color: #0061ff;
 }
 
+/* CARD ORIZZONTALE */
+
 .hcard {
-  display: flex;
+  margin: 15px 0;
+
+  border: 1px solid lightslategray;
 }
 
+.hcard-divider {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 20px;
+  justify-content: space-between;
+}
+
+.leftcontainer {
+  width: 65%;
+}
+
+.hcard > div:first-of-type {
+  text-align: center;
+  border-bottom: 1px solid lightslategray;
+  padding: 10px;
+}
 /* Partner */
 
 .partnerwrap {
