@@ -94,15 +94,32 @@ nav div > a:hover {
   display: flex;
   margin-top: 50px;
   flex-direction: column;
+  position: relative;
   gap: 20px;
+  width: 30%;
 }
 
 .jtext-wrapper * {
   display: block;
 }
 
-.jumbo img {
-  max-width: 70%;
+.downarrow {
+  flex-grow: 1;
+  margin: 0;
+}
+
+.downarrow i {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.imgcontainer {
+  width: 75%;
+}
+.imgcontainer img {
+  display: block;
+  max-width: 100%;
   position: relative;
   top: 50px;
 }
@@ -153,7 +170,6 @@ form div {
 /* CARDS */
 
 .card-wrapper {
-  padding: 30 var(--pagegutter);
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -164,7 +180,51 @@ form div {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  height: 100%;
+  border: 1px solid lightslategray;
+}
+
+.half {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.features {
+  padding: 10px 20px;
+}
+
+.users {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid lightslategray;
+}
+
+.prices > span:first-of-type {
+  color: lightslategray;
+}
+
+.fa-ul {
+  font-size: 0.9rem;
+}
+
+.fa-ul > li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.iconlist > li:first-child {
+  margin-top: 40px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
 }
 
 .checklist i {
