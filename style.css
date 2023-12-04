@@ -410,9 +410,37 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .purpletitle {
   color: #60092b;
   width: 60%;
+}
+
+/* FAQ */
+
+.faq {
+  padding: 0 25%;
+}
+
+.question-container {
+  margin: 40px 0 80px 0;
+}
+
+.question-container * {
+  display: block;
+}
+
+.question {
+  position: relative;
+  padding: 30px 0;
+}
+
+.question p {
+  display: none;
+}
+
+.question:hover p {
+  display: block;
 }
